@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "CALCULATOR"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/CALCULATOR"
+license = "MIT license"
+author = 'Lucio Palmieri'
+author_email = "lpalmieri.eng@gmail.com"
+
+[tool.briefcase.app.CALCULATOR]
+formal_name = "CALCULATOR"
+description = "Calculator app running in python"
+icon = "src/CALCULATOR/resources/CALCULATOR"
+sources = ['src/CALCULATOR']
+requires = []
+
+
+[tool.briefcase.app.CALCULATOR.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.CALCULATOR.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.CALCULATOR.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.CALCULATOR.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.CALCULATOR.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]

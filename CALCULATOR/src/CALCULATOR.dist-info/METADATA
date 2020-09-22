@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.3
+Name: CALCULATOR
+Formal-Name: CALCULATOR
+App-ID: com.example.CALCULATOR
+Version: 0.0.1
+Home-page: https://example.com/CALCULATOR
+Author: Lucio Palmieri
+Author-email: lpalmieri.eng@gmail.com
+Summary: Calculator app running in python
